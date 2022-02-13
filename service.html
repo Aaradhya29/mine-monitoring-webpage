@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP IOT DASHBOARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">MINE MONITORING SYSTEM</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/about/about.html">ABOUT</a></li>
+                <li><a href="http://127.0.0.1:5500/gaugesStatus/service.html">SERVICE</a></li>
+                <li><a href="http://127.0.0.1:5500/Register/register.html">REGISTER</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Temperature</p>
+          <canvas id="gauge-temperature"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Humidity</p>
+          <canvas id="gauge-humidity"></canvas>
+        </div>
+        <div class="card">
+            <p class="card-title">Pressure</p>
+            <canvas id="gauge-pressure"></canvas>
+          </div>
+          <div class="card">
+            <p class="card-title">MQ4 Gas Concentration</p>
+            <canvas id="gauge-concentration 1"></canvas>
+          </div>
+          <div class="card">
+            <p class="card-title">MQ9 Gas Concentration</p>
+            <canvas id="gauge-concentration 2"></canvas>
+          </div>
+          <div class="card">
+            <p class="card-title">GPS coordinates</p> 
+            <canvas id="gps-cooordination"></canvas>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
